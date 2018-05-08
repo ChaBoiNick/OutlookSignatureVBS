@@ -82,7 +82,7 @@ objSelection.TypeText Chr(11)
 'Location line
 objSelection.Font.Bold = true
 objSelection.font.color = rgb(210,73,42)
-objSelection.TypeText strOffice & " Office " & "| FLOTH Sustainable Building Consultants"
+objSelection.TypeText strOffice & " txt " & "| txt"
 objSelection.Font.Bold = False
 objSelection.TypeText Chr(11)
 
@@ -134,12 +134,12 @@ objSelection.TypeText Chr(11)
 objSelection.Font.Size = 9
 objSelection.Font.Bold = true
 objSelection.font.color = rgb(0,187,0)
-objSelection.TypeText "Winner of the 2017 Brisbane Lord Mayors Business Awards for Sustainability in Business, awarded to Floth for 69 Robertson Street, Fortitude Valley."
+objSelection.TypeText "txt"
 objSelection.Font.Bold = false
 objSelection.TypeText Chr(11)
 
 'New signature image adding - Place script and file in NETLOGON and adjust image file path
-Set shp = objSelection.InlineShapes.AddPicture("\\flsvr03\Software\_New Machine Install\SIGNATURES New\Dev\test.jpg")
+Set shp = objSelection.InlineShapes.AddPicture("\\test.jpg")
 shp.LockAspectRatio = msoFalse
 shp.Width = 456
 shp.Height = 86
@@ -148,14 +148,14 @@ shp.Height = 86
 
 'Code for multuple departments with different signature images
 ' If (objUser.Department = "Department NAME") Then 
-             ' objSelection.InlineShapes.AddPicture("\LMBA_Landscape_DarkGreen_668x126.jpg") 
+	' objSelection.InlineShapes.AddPicture("\\new.jpg") 
  
  
 ' ElseIf (objUser.Department = "Department NAME") Then 
-        ' objSelection.InlineShapes.AddPicture("\LMBA_Landscape_DarkGreen_668x126.jpg") 
+        ' objSelection.InlineShapes.AddPicture("\\new.jpg") 
  
 ' Else 
-        ' objSelection.InlineShapes.AddPicture("\LMBA_Landscape_DarkGreen_668x126.jpg") 
+        ' objSelection.InlineShapes.AddPicture("\\new.jpg") 
  
 ' End If 
 
